@@ -133,7 +133,7 @@ app.use(helmet.hsts({maxAge: ninetyDaysInSeconds, force: true}))
 
 // Use `helmet.dnsPrefetchControl()`
 
-
+app.use(helmet.dnsPrefetchControl())
 
 /** 9) Disable Client-Side Caching - `helmet.noCache()` */
 
